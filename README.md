@@ -12,16 +12,16 @@ A GUI version of auto-miner
 
 - Status: it indicates the status of the miner, not of the script itself. It begins as 'Not running' if the miner is not running and as 'Running' is the miner is currently running.
 
-- 'API status': it indicates whether the API is reachable or not depending on the last call. It begin as 'Waiting', after the first check it'll turn to 'Connected'. If there's any connection problem it's going to indicate the number of attempts of reconnection (at the moment this feature is a bit experimental, I'm monitoring to see if it works as intended).
+- 'API status', it indicates whether the API is reachable or not depending on the last call. It begin as 'Waiting', after the first check it'll turn to 'Connected'. If there's any connection problem it's going to indicate the number of attempts of reconnection (at the moment this feature is a bit experimental, I'm monitoring to see if it works as intended).
 
-- 'Force start': force the miner to start, regardless of the gas value.
+- 'Force start', force the miner to start, regardless of the gas value.
 
-- 'Force stop': force the miner to stop, regardless of the gas value.
+- 'Force stop', force the miner to stop, regardless of the gas value.
 - Next check:
 
-- 'Next check': It indicates how much time is left for the next gas value check
+- 'Next check', It indicates how much time is left for the next gas value check
 
-- 'Gas Value': each time a gas value check is performed, this value is updated (Green if is > threshold, Red if is < threshold)
+- 'Gas Value', each time a gas value check is performed, this value is updated (Green if is > threshold, Red if is < threshold)
 
 Because the amount of checks needed and because the single threaded functioning of tkinter, the GUI is a little laggy: try not to spam Force starts and Force stops.
 
