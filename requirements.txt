@@ -1,0 +1,4 @@
+#to install in cmd: 'py -m pip install -r requirements.txt'
+
+psutil==5.8.0
+requests==2.25.1
