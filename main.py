@@ -110,12 +110,13 @@ def check_process_running():
     status_label.after(1000, check_process_running)
 
 def start_miner():
+    global file
     global started
     reset_timer()
     x = running()
     if not x:
         save = os.getcwd()
-        os.chdir('E:/Download/miner/lolMiner_v1.28a_Win64/1.28a')
+        os.chdir('/'.join(file.split('/')[:-1]))
         file = miner[0]
         os.system(f'start cmd /k {file}')
         text_status.set('Running')
@@ -141,7 +142,7 @@ def stop_miner():
 
 #ask for folder and load config.txt
 
-file_name()
+file = file_name()
 diz = read_config()
 
 started = False
