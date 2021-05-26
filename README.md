@@ -17,7 +17,6 @@ A GUI version of auto-miner
 - 'Force start', force the miner to start, regardless of the gas value.
 
 - 'Force stop', force the miner to stop, regardless of the gas value.
-- Next check:
 
 - 'Next check', It indicates how much time is left for the next gas value check
 
@@ -34,8 +33,8 @@ The script is compatible with lolminer and t-rex. It run properly on Windows onl
 
 - *'start_gas_threshold'*, it accepts a numerical value which defines the threshold after which the miner starts.
 - *'stop_gas_threshold'*, it accepts a numerical value which defines the threshold after which the miner stops.
-- *'wait_time_inactive'*, it accepts a numerical value, which defines how much time the script should wait for each gas value check (in seconds), when miner is OFF (I suggest to put an integer to get a better progress bar visualization).
-- *'wait_time_active'*, it accepts a numerical value, which defines how much time the script should wait for each gas value check (in seconds), when miner is ON (I suggest to put an integer to get a better progress bar visualization).
+- *'wait_time_inactive'*, it accepts a numerical value, which defines how much time the script should wait for each gas value check (in seconds), when miner is OFF.
+- *'wait_time_active'*, it accepts a numerical value, which defines how much time the script should wait for each gas value check (in seconds), when miner is ON.
 - *API*, it accepts an API token from https://etherscan.io/apis#gastracker, you could try to put 'YourApiKeyToken', but this way you have some time limitations.
 - *gas_oracle*, you have 3 options: 'SafeGasPrice', 'ProposeGasPrice', 'FastGasPrice' to choose from.
 
