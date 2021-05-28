@@ -1,6 +1,7 @@
 # auto-mining-GUI
 
-A GUI version of auto-miner
+An experimental GUI version of auto-miner.
+Code reformatting and Multi threading implementation is needed.
 
 ## Reminders
 
